@@ -72,3 +72,39 @@ astext/
 # -------------------------------------------------------------------------
 *.jks
 *.keystore
+
+
+# -------------------------------------------------------------------------
+# 각 OS별 자동 생성 플러그인 등록 파일 (추가 차단)
+# -------------------------------------------------------------------------
+**/generated_plugin_registrant.cc
+**/generated_plugins.cmake
+**/GeneratedPluginRegistrant.swift
+**/generated_plugin_registrant.h
+
+# 1. 크롬(Web) 빌드 시 자동 생성되는 캐시 및 컴파일 파일
+.dart_tool/chrome-device/
+framework/
+
+# 2. 리눅스 데스크톱 빌드 시 대량 생성되는 임시 툴체인 및 객체 파일
+linux/flutter/ephemeral/
+linux/flutter/generated_plugin_registrant.h
+linux/flutter/generated_plugin_registrant.cc
+linux/flutter/generated_plugins.cmake
+
+# 3. 윈도우/맥 데스크톱 자동 생성 플러그인 (혹시 모를 이주 대비)
+windows/flutter/ephemeral/
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Flutter/ephemeral/
+
+# 4. 안드로이드 스튜디오 및 Gradle 빌드 로그/캐시 추가 차단
+.gradle/
+/android/app/src/main/res/raw/
+/android/captures/
+*.apk
+*.ap_
+*.dex
+
+# 5. 로컬 폰트 및 텍스트 편집기 임시 스왑 파일
+*.log
+*.lock
